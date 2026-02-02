@@ -17,6 +17,8 @@ RentMate is a college-focused web platform that allows students to list, rent, a
 
 💻 Clean and responsive UI
 
+
+
 🛠 Tech Stack
 
 HTML – Structure
@@ -27,6 +29,9 @@ JavaScript – Basic interactivity
 
 GitHub Pages – Hosting
 
+
+
+
 🎯 Vision
 
 Students often need items for short durations. RentMate aims to:
@@ -36,6 +41,9 @@ Reduce unnecessary purchases
 Help students earn from unused items
 
 Build a trusted, peer-to-peer campus marketplace
+
+
+
 
 🚧 Current Status
 
