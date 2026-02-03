@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RentMate | Login</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="auth-container">
+    <h1>Rent<span>Mate</span></h1>
+    <p class="subtitle">Login or Sign up to continue</p>
+
+    <!-- Phone Input -->
+    <div id="phone-section">
+      <label>Phone Number</label>
+      <div class="phone-input">
+        <span>+91</span>
+        <input type="tel" id="phone" placeholder="Enter phone number" maxlength="10">
+      </div>
+      <button onclick="sendOTP()">Send OTP</button>
+    </div>
+
+    <!-- OTP Input -->
+    <div id="otp-section" class="hidden">
+      <label>Enter OTP</label>
+      <input type="text" id="otp" placeholder="6-digit OTP" maxlength="6">
+      <button onclick="verifyOTP()">Verify</button>
+      <p class="resend">Didn’t receive OTP? <span>Resend</span></p>
+    </div>
+  </div>
+
+<script src="login.js"></script>
+</body>
+</html>
