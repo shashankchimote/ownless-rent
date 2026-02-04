@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Complete Profile | RentMate</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{box-sizing:border-box;font-family:Poppins,Segoe UI,sans-serif}
+
+body{
+  background:#0F172A;
+  color:#E5E7EB;
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.container{
+  width:100%;
+  max-width:540px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(16px);
+  border-radius:20px;
+  padding:32px;
+  box-shadow:0 0 45px rgba(45,212,191,.25);
+}
+
+h1{
+  color:#2DD4BF;
+  margin-bottom:6px;
+}
+
+.subtitle{
+  color:#94A3B8;
+  font-size:.9rem;
+  margin-bottom:24px;
+}
+
+label{
+  font-size:.85rem;
+  color:#CBD5F5;
+}
+
+input,select{
+  width:100%;
+  margin:8px 0 18px;
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #1E293B;
+  background:#020617;
+  color:#E5E7EB;
+}
+
+input[type=file]{padding:8px}
+
+.row{
+  display:flex;
+  gap:12px;
+}
+
+.row div{flex:1}
+
+.section{
+  margin-top:20px;
+  background:#020617;
+  border:1px dashed #334155;
+  padding:18px;
+  border-radius:16px;
+}
+
+.section h3{
+  color:#2DD4BF;
+  font-size:1rem;
+  margin-bottom:6px;
+}
+
+.section p{
+  font-size:.8rem;
+  color:#94A3B8;
+}
+
+.camera-btn{
+  margin-top:12px;
+  background:#2DD4BF;
+  color:#020617;
+  border:none;
+  padding:10px 16px;
+  border-radius:10px;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.submit{
+  width:100%;
+  margin-top:28px;
+  padding:15px;
+  background:#2DD4BF;
+  color:#020617;
+  border:none;
+  border-radius:16px;
+  font-weight:700;
+  font-size:1rem;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Complete Your Profile</h1>
+  <p class="subtitle">Verified profiles unlock listings & build trust</p>
+
+  <label>Full Name</label>
+  <input type="text" placeholder="Your full name">
+
+  <label>Profile Photo</label>
+  <input type="file" accept="image/*">
+
+  <div class="row">
+    <div>
+      <label>City</label>
+      <input type="text" placeholder="Your city">
+    </div>
+    <div>
+      <label>College / Organization</label>
+      <input type="text" placeholder="Optional">
+    </div>
+  </div>
+
+  <label>Age (18+)</label>
+  <input type="number" min="18">
+
+  <!-- ID VERIFICATION -->
+  <div class="section">
+    <h3>ID Verification</h3>
+    <p>Upload any one government or college ID</p>
+
+    <select>
+      <option>Select ID Type</option>
+      <option>Aadhaar Card</option>
+      <option>PAN Card</option>
+      <option>College ID</option>
+    </select>
+
+    <input type="file" accept="image/*,application/pdf">
+  </div>
+
+  <!-- SELFIE VERIFICATION -->
+  <div class="section">
+    <h3>Selfie Verification</h3>
+    <p>Live camera verification to confirm identity</p>
+    <button class="camera-btn">Open Camera</button>
+  </div>
+
+  <button class="submit">Save & Continue</button>
+</div>
+
+</body>
+</html>
